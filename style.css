@@ -1,0 +1,21 @@
+body {
+        background-color: #CEE3F6;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+    a:link {
+        color: #2E64FE;
+        text-decoration: none;
+        }
+    a:visited {
+        color: #A4A4A4;
+        text-decoration: none;
+        }
