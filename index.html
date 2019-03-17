@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hugh's Website</title>
-    <meta charset="utf-8" />
-    <link href="style.css" type="text/css" rel="stylesheet"/>   
-</head>
+  <title>deriv</title>
+  <!-- load stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
+  <!-- configure MathJax -->
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+
+  <!-- import MathJax -->
+  <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
 <body>
-<div>
-    <h1>Hugh's Website</h1>
-    <p>My name is Hugh, and this is where my website and blog will be once I actually have time to make them. Until then, you can find me on <a href="https://linkedin.com/in/hughjoreilly/">linkedin</a> or email me at <a href="mailto:horeilly1101@gmail.com">horeilly1101@gmail.com.</a></p>
-    <hr>
-    <p class="credit">The source code of <a href="https://www.example.com">example.com</a> was used as inspiration for this (in progress) landing page.  Background picture taken by <a href="https://unsplash.com/@siniz">Siniz Kim<a/>.</p>
-</div>
+  <div id="demo">
+    <h1>$deriv$</h1>
+    <h2 id="header">$results$ $here$</h2>
+    <button type="button" onclick="loadDerivative()" style="height:60;font-size:14pt;">Differentiate</button>
+    <input type="text" name="exprInput" id="exprInput" placeholder="Expression" size=30>
+    <br><br> $with$ $respect$ $to$ 
+    <input type="text" name="varInput" id="varInput" placeholder="Variable" size=8>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
