@@ -32,3 +32,18 @@ button {
 :focus {
     outline: 0;
 }
+
+/* unvisited link */
+a:link {
+  color: #5190FF;
+}
+
+/* visited link */
+a:visited {
+  color: #FFC851;
+}
+
+/* mouse over link */
+a:hover {
+  color: #93C2FF;
+}
