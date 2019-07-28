@@ -53,8 +53,9 @@ const App = () => (
           width={[ 1, 1, 1/2 ]}
           my={MY}
       >
-        <Text>CS + Math @ Rice. Co-Director @ <a href='https://hack.rice.edu/'>HackRice</a>.</Text>
-        <Text>I'm also really into movies.</Text>
+          <Text>CS + Math @ Rice. Co-Director @ <a href='https://hack.rice.edu/'>HackRice</a>.</Text>
+          <Text>Engineering Intern @ <a href='https://indeed.com'>indeed.com</a></Text>
+          <Text>I'm also really into movies.</Text>
       </Box>
 
       <Flex my={MY}>
