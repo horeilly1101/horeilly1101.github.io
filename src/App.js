@@ -46,15 +46,6 @@ class ImageLink extends React.Component {
   }
 }
 
-const Row = props => (
-    <>
-      <Text mx={2}>{props.text}</Text>
-      <Flex my={MY}>
-        {props.children}
-      </Flex>
-    </>
-);
-
 const App = () => (
   <div className="App App-header">
       <Heading my={MY}>Hi, I'm Hugh.</Heading>
@@ -66,7 +57,7 @@ const App = () => (
         <Text>I'm also really into movies.</Text>
       </Box>
 
-      <Row text="Contact me:">
+      <Flex my={MY}>
           <ImageLink
               href='mailto:horeilly1101@gmail.com'
               src={email}
@@ -77,15 +68,12 @@ const App = () => (
               src={linkedin}
               hoverSrc={linkedinWhite}
           />
-      </Row>
-
-      <Row text="Check out my projects:">
           <ImageLink
               href='https://github.com/horeilly1101'
               src={github}
               hoverSrc={githubWhite}
           />
-      </Row>
+      </Flex>
 
   </div>
 );
