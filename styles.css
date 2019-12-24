@@ -1,0 +1,58 @@
+:root {
+    --light: #ffffff;
+    --standard: #e6f2ff;
+    --dark: #002266;
+}
+
+body {
+    background: var(--standard);
+    display: flex;
+    color: var(--dark);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.bio {
+    padding: 40px 40px;
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+    border-color: var(--dark);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: var(--light);
+}
+
+.proj {
+    text-align: center;
+}
+
+.logo {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo:hover {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: var(--dark);
+    border-color: var(--dark);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: var(--standard);
+}
+
+/* mouse over link */
+.link:hover {
+    color: var(--dark);
+    padding: 1px;
+}
