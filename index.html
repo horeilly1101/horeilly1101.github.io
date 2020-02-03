@@ -6,6 +6,9 @@
         <link rel='icon' href='static/media/favicon.ico' type='image/x-icon'>
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
+        <!-- Typed JS https://github.com/mattboldt/typed.js/ -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155024735-1"></script>
         <script>
@@ -17,7 +20,7 @@
     </head>
     <body>        
         <div class="bio">
-            <h1>Hi, I'm Hugh.</h1>
+            <h1 id="intro" style="height: 1em"></h1>
             <p>
                 I'm a third-year Computer Science and Math double major at <a class="link" href="https://rice.edu">Rice University</a>, and I'm interested in Software Engineering. I get excited by high-impact opportunities that that will accelerate my personal and professional growth.
             </p>
@@ -43,4 +46,14 @@
             </div>
         </div>
     </body>
+    <script>
+        var typed3 = new Typed('#intro', {
+            strings: [
+                'Hi^1000, I\'m Hugh.',
+            ],
+            typeSpeed: 20,
+            startDelay: 0,
+            showCursor: false
+        });
+    </script>
 </html>
