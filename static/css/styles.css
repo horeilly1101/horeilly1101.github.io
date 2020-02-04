@@ -10,6 +10,13 @@ body {
     color: var(--dark);
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .bio {

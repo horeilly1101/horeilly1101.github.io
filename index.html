@@ -9,6 +9,13 @@
         <!-- Typed JS https://github.com/mattboldt/typed.js/ -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
+        <!-- JQuery -->
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.slim.js"
+                integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+                crossorigin="anonymous">
+        </script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155024735-1"></script>
         <script>
@@ -18,7 +25,9 @@
             gtag('config', 'UA-155024735-1');
         </script>
     </head>
-    <body>        
+    <body>
+        <script>document.body.className += ' fade-out';</script>
+
         <div class="bio">
             <h1 id="intro" style="height: 1em"></h1>
             <p>
@@ -47,12 +56,17 @@
         </div>
     </body>
     <script>
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+    </script>
+    <script>
         var typed3 = new Typed('#intro', {
             strings: [
                 'Hi^1000, I\'m Hugh.',
             ],
             typeSpeed: 20,
-            startDelay: 1000,
+            startDelay: 1500,
             showCursor: false
         });
     </script>
