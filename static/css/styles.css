@@ -1,6 +1,6 @@
 :root {
     --light: #ffffff;
-    --standard: #e6f2ff;
+    --standard: #ffffff;
     --dark: #002266;
 }
 
@@ -20,15 +20,35 @@ body.fade-out {
 }
 
 .bio {
-    padding: 40px 40px;
+    padding: 20px 20px;
+    padding-top: 5px !important;
     margin: auto;
-    width: 50%;
+    width: 20%;
     font-size: 20px;
     border-color: var(--dark);
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 20px;
     background-color: var(--light);
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .bio {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bio {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bio {
+        width: 50%;
+    }
 }
 
 .proj {
