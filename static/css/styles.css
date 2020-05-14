@@ -33,6 +33,8 @@ body.fade-out {
     text-align: center;
 }
 
+/* Format bio for different screen sizes. */
+
 @media only screen and (max-width: 1200px) {
     .bio {
         width: 30%;
