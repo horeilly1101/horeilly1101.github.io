@@ -24,11 +24,11 @@ body.fade-out {
     padding-top: 5px !important;
     margin: auto;
     width: 20%;
-    font-size: 20px;
+    font-size: 25px;
     border-color: var(--dark);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
+    border-bottom: solid;
+    border-width: 5px;
+    /*border-radius: 20px;*/
     background-color: var(--light);
     text-align: center;
 }
